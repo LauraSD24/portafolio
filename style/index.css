@@ -669,7 +669,7 @@ body{
     .texto__inicio{
         width: 100%;
         height: 45%;
-        gap: 30px;
+        justify-content: space-between;  
     }
     .nombre__inicio{
         font-size: 28px;
@@ -755,18 +755,15 @@ body{
         width: inherit;
         height: 50%;
     }
-    .texto__inicio{
-        gap: 20px;
-    }
     .sobre__mi__imagen{
         height: 45%;
     }
     #contacto{
         height: 130vh;
     }
-    /* .sec_inicio{
+    .sec_inicio{
         height: 145vh;
-    } */
+    }
 }
 
 @media(max-width:320px){
