@@ -446,6 +446,7 @@ body{
     box-shadow: 1px 2px 2px 2px black;
     border-radius: 8px;
     text-align: justify;
+    hyphens: auto;
     padding: 20px;
     display: flex;
     align-items: center;
