@@ -766,12 +766,12 @@ body{
         height: 130vh;
     }
     .sec_inicio{
-        height: 140vh;
+        height: 150vh;
     }
 }
 
 @media(max-width:320px){
     .sec_inicio{
-        height: 150vh;
+        height: 155vh;
     }
 }
