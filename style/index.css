@@ -744,6 +744,10 @@ body{
     .sec_inicio{
         height: 140vh;
     }
+    .btn__projects{
+        width: 72px;
+        font-size: 18px;
+    }
 }
 
 @media(max-width:375px){
@@ -756,9 +760,6 @@ body{
     }
     .sobre__mi__imagen{
         height: 45%;
-    }
-    .btn__projects{
-        width: 72px;
     }
     #contacto{
         height: 130vh;
