@@ -745,6 +745,12 @@ body{
     }
 }
 
+@media(max-width:405px){
+    .sec_inicio{
+        height: 140vh;
+    }
+}
+
 @media(max-width:375px){
     .images{
         width: inherit;
@@ -758,6 +764,9 @@ body{
     }
     #contacto{
         height: 130vh;
+    }
+    .sec_inicio{
+        height: 140vh;
     }
 }
 
