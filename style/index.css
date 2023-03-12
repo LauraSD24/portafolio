@@ -624,9 +624,9 @@ body{
         width: 75%;
         justify-content: space-between;
     }
-    .btn__projects{
+    /* .btn__projects{
         width: 80px;
-    }
+    } */
     .form_contact{
         border: none;
     }
@@ -707,6 +707,7 @@ body{
     }
     .sobre__mi__descargarcv{
         margin: 0 auto;
+        width: 150px;
     }
     .menu__projects{
         width: 60%;
@@ -714,7 +715,7 @@ body{
         gap: 10px;
     }
     .btn__projects{
-        width: 70px;
+        width: 75px;
     }
     .container__informacion__contacto{
         width: 100%;
@@ -756,16 +757,22 @@ body{
     .sobre__mi__imagen{
         height: 45%;
     }
+    .btn__projects{
+        width: 72px;
+    }
     #contacto{
         height: 130vh;
     }
-    .sec_inicio{
+    /* .sec_inicio{
         height: 145vh;
-    }
+    } */
 }
 
 @media(max-width:320px){
     .sec_inicio{
-        height: 150vh;
+        height: 140vh;
+    }
+    .btn__projects{
+        width: 70px;
     }
 }
