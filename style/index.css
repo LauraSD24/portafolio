@@ -656,12 +656,6 @@ body{
     .menu{
         width: 100%;
     }
-    /* .list{
-        width: 100%;
-    } */
-    /* .input_menu:checked~.list{
-        left: 0;
-    }  */
     .secciones{
         height: 150vh;
         gap: 10px;
