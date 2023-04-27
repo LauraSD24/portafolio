@@ -1,3 +1,5 @@
+import { array_projects } from "./data.js";
+
 // elemento de interfaz, se va a ejecutar cuando cargue el elemento, la página html
 document.addEventListener("DOMContentLoaded",()=>{
 
@@ -66,6 +68,49 @@ document.addEventListener("DOMContentLoaded",()=>{
     window.addEventListener("scroll",(e)=>{
         item_active();
     })
+
+    // función para filtrar proyectos
+
+  const cards__container = document.querySelector(".cards__container");
+
+  function filter_projects(array) {
+
+    if (array.length === 0) {
+      cards__container.innerText = "No se encontraron proyectos";
+    } else {
+      cards__container.innerHTML = "";
+
+      array.map((value) => {
+        const card = document.createElement("DIV");
+        card.innerHTML = `
+                <div class="card cards__projects">
+                  <img src=${value.image} class="img__project">
+                  <h3 class="title__project">${value.name}</h3>
+                  <div class="cardinfo">
+                    <p class="descripcion__project">${value.description}</p>
+                    <a target="_blank" href=${value.link} class="botones btn__cardinfo btncard1">Ver proyecto</a>
+                  </div>
+                </div>
+                `
+        cards__container.appendChild(card);
+      })
+    }
+  }
+  filter_projects(array_projects);
+
+  const btn__projects = document.querySelectorAll(".btn__projects");
+  for (let i = 0; i < btn__projects.length; i++) {
+    const btn = btn__projects[i];
+    btn.addEventListener("click", (e) => {
+      const btn_filter = e.target.innerText.toLowerCase();
+      if (btn_filter === "todos") {
+        filter_projects(array_projects);
+      } else {
+        const filter = array_projects.filter((project) => btn_filter === project.category.toLowerCase());
+        filter_projects(filter);
+      }
+    })
+  }
 })
 
 

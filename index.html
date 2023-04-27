@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
-    <script defer src="js/index.js"></script>
 </head>
 <body>
     <div class="portafolio">
@@ -114,8 +113,8 @@
                     <li class="projects__items"><button class="botones btn__projects">App</button></li>
                     <li class="projects__items"><button class="botones btn__projects">Diseños</button></li>
                 </ul>
-                <div class="cards__container">
-                    <div class="card cards__projects">
+                 <div class="cards__container">
+                   <!-- <div class="card cards__projects">
                         <img src="img/portafolio.jpg" alt="" class="img__project">
                         <h3 class="title__project">Portafolio</h3>
                         <div class="cardinfo">
@@ -158,7 +157,7 @@
                             </p>
                             <button class="botones btn__cardinfo btncard4">Ver proyecto</button>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- <div class="cards__projects">
                         <img src="" alt="" class="img__project">
                         <h3 class="title__project"></h3></div>
@@ -195,21 +194,23 @@
                     </div>
                 </div>
                 <div class="div__contact container__formulario__contacto">
-                    <form class="form_contact">
+                    <form class="form_contact" action="https://formspree.io/f/myyalovo" method="POST">
                         <label for="">Nombre: </label>
-                        <input type="text" class="form__input">
+                        <input type="text" class="form__input" name="name">
                         <label for="">Celular: </label>
-                        <input type="text" class="form__input">
+                        <input type="number" class="form__input" name="phone">
                         <label for="">Correo:</label>
-                        <input type="text" class="form__input">
+                        <input type="email" class="form__input" name="email">
                         <label for="">Mensaje: </label>
-                        <textarea class="form__input form__input__message" name="" id="" cols="3" rows="5"></textarea>
+                        <textarea class="form__input form__input__message" name="message" id="" cols="3" rows="5"></textarea>
+                        <button class="botones btn__form_send">Enviar</button>
                     </form>
-                    <button class="botones btn__form_send">Enviar</button>
                 </div>
 
             </div>
         </section>
-    </div>  
+    </div> 
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/data.js"></script>
 </body>
 </html>
